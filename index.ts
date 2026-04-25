@@ -1,10 +1,11 @@
-import { runAgent } from "./src/agent.ts"
+import { runAgent } from './src/agent.ts'
+import { tools } from './src/tools/index.ts'
 
 const userMessage = process.argv[2]
 
 if (!userMessage) {
-  console.error("Please provide a message")
+  console.error('Please provide a message')
   process.exit(1)
 }
 
-await runAgent({ userMessage })
+await runAgent(userMessage, tools)

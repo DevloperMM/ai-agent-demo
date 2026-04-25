@@ -1,10 +1,11 @@
-import "dotenv/config"
+import 'dotenv/config'
 
-import OpenAI from "openai"
+import OpenAI from 'openai'
+import { InferenceClient } from '@huggingface/inference'
 
-const openai = new OpenAI({
+export const openai = new OpenAI({
   apiKey: process.env.AI_API_KEY,
-  baseURL: process.env.AI_BASE_URL || "https://models.inference.ai.azure.com",
+  baseURL: process.env.AI_BASE_URL || 'https://models.inference.ai.azure.com',
 })
 
-export default openai
+export const huggingFaceAI = new InferenceClient(process.env.HF_TOKEN)

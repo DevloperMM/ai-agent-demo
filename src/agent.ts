@@ -1,16 +1,30 @@
-import openai from "./ai"
-import { systemPrompt } from "./systemPrompt"
+import { runLLM } from './llm'
+import type { AIMessage } from '../types'
+import { runTool } from './toolRunner'
 
-const MODEL_NAME = "gpt-4o-mini"
+export const runAgent = async (userMessage: string, tools: any[]) => {
+  const messages: AIMessage[] = [{ role: 'user', content: userMessage }]
 
-export const runAgent = async ({ userMessage }: { userMessage: string }) => {
-  const response = await openai.chat.completions.create({
-    model: MODEL_NAME,
-    messages: [
-      { role: "system", content: systemPrompt },
-      { role: "user", content: userMessage },
-    ],
-  })
+  while (true) {
+    const response = await runLLM({ messages, tools })
+    messages.push(response)
 
-  console.log(response.choices[0].message.content)
+    if (response.content) {
+      console.log(response.content)
+      break
+    }
+
+    if (response.tool_calls) {
+      const toolCall = response.tool_calls[0]
+
+      if (toolCall.type === 'function') {
+        const toolResponse = await runTool(toolCall, userMessage)
+        messages.push({
+          role: 'tool',
+          content: toolResponse,
+          tool_call_id: toolCall.id,
+        })
+      }
+    }
+  }
 }
