@@ -2,6 +2,7 @@ import { JSONFilePreset } from 'lowdb/node'
 import type { AIMessage } from '../types'
 import { v4 as uuidv4 } from 'uuid'
 import { summarizeMessages } from './llm'
+import fs from 'node:fs'
 
 export type MessageWithMetadata = AIMessage & {
   id: string
@@ -32,7 +33,16 @@ const defaultData: Data = {
 }
 
 export const getDb = async () => {
-  const db = await JSONFilePreset<Data>('db.json', defaultData)
+  let db
+  try {
+    db = await JSONFilePreset<Data>('db.json', defaultData)
+  } catch (error) {
+    // Since there can be only this error otherwise we can handle by if-else
+    console.warn('[db.json] was empty or corrupted. Resetting...')
+    fs.writeFileSync('db.json', JSON.stringify(defaultData, null, 2))
+    db = await JSONFilePreset<Data>('db.json', defaultData)
+  }
+
   return db
 }
 
@@ -70,7 +80,9 @@ export const addMessages = async (messages: AIMessage[]) => {
     }
 
     if (splitIndex > 0) {
-      const oldestMsgs = db.data.messages.slice(0, splitIndex).map(removeMetadata)
+      const oldestMsgs = db.data.messages
+        .slice(0, splitIndex)
+        .map(removeMetadata)
       const summary = await summarizeMessages(db.data.summary, oldestMsgs)
       db.data.summary = summary
       db.data.messages = db.data.messages.slice(splitIndex)

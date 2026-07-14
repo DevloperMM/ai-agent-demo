@@ -19,11 +19,6 @@ export const runLLM = async ({
   const formattedTools = tools.map(zodFunction)
   const summary = await getSummary()
 
-  console.log(messages)
-  console.log('---------------------------')
-  console.log(summary)
-  console.log('---------------------------')
-
   const response = await openai.chat.completions.create({
     model: 'gpt-4o-mini',
     temperature,
