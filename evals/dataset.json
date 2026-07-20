@@ -1,0 +1,37 @@
+[
+  {
+    "input": "find me a good sci-fi movie from the 2010s",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+    {
+    "input": "imagine a scene with a wizard casting a spell in a dark forest",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+    {
+    "input": "what's the general consensus on Barbie the movie according to reddit",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+    {
+    "input": "give me some film trivia",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "I want to test my cinema knowledge",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  }
+]

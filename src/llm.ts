@@ -1,9 +1,13 @@
+import "dotenv/config"
+
 import type { AIMessage } from '../types'
 import { zodFunction, zodResponseFormat } from 'openai/helpers/zod'
 import { openai } from './ai'
 import { systemPrompt as defaultSystemPrompt } from './systemPrompt'
 import { z } from 'zod'
 import { getSummary } from './memory'
+
+const CHAT_MODEL = process.env.CHAT_MODEL as string
 
 export const runLLM = async ({
   messages,
@@ -20,7 +24,7 @@ export const runLLM = async ({
   const summary = await getSummary()
 
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model: CHAT_MODEL,
     temperature,
     messages: [
       {
@@ -41,7 +45,7 @@ export const runLLM = async ({
 
 export const runApprovalCheck = async (userMessage: string) => {
   const result = await openai.beta.chat.completions.parse({
-    model: 'gpt-4o-mini',
+    model: CHAT_MODEL,
     temperature: 0.1,
     response_format: zodResponseFormat(
       z.object({
@@ -80,7 +84,7 @@ export const summarizeMessages = async (
     : `Here are the messages to summarize:\n${messagesPrompt}\n\nProvide a concise summary of this conversation history.`
 
   const response = await openai.chat.completions.create({
-    model: 'gpt-4o-mini',
+    model: CHAT_MODEL,
     temperature: 0.3,
     messages: [
       {

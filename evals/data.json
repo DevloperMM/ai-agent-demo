@@ -1,0 +1,702 @@
+[
+  {
+    "input": "find me a good sci-fi movie from the 2010s",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "what are the best movies directed by Christopher Nolan",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "show me highly rated action films from 2020 onwards",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "I want to watch something funny, any comedy suggestions",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "what's the highest grossing movie of all time",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find me thriller movies with a rating above 8",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "recommend a movie from the 90s",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "what are some good horror movies released between 2015 and 2023",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find movies by Steven Spielberg",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "I'm in the mood for a drama film with good ratings",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "what's the top rated movie on metascore",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find me something with Tom Hanks",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "show me the best animated movies sorted by rating",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "what are some underrated sci-fi films from the 80s",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find romantic movies released after 2018 with at least 7 rating",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "I want to discover a hidden gem from before 2000",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "list some adventure movies sorted by revenue descending",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find me a psychological thriller directed by David Fincher",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "what's a good mystery movie I haven't seen",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find war movies from the 2000s with high metascore",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "show me films about space exploration",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "I like movies similar to Inception, what else is there",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find me the lowest rated movies",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "what are some good crime dramas",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "show me the newest releases sorted by year",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find classic films from the 70s rated above 8",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "I want a movie about artificial intelligence",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find me a feel-good movie for tonight",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "what are the most profitable movies sorted by revenue",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "show me dark comedies with good reviews",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find disaster movies from the 2010s",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "what are Quentin Tarantino's best films",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find me a sports movie that's actually good",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "show me western movies rated above 7 from before 1990",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "find me a documentary about nature",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "search-movie"}}]
+    }
+  },
+  {
+    "input": "generate an image of a futuristic city at sunset",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "draw me a picture of a cat wearing a top hat",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "create a photo of a mountain landscape with snow",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "show me what a dragon would look like in real life",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "imagine a scene with a wizard casting a spell in a dark forest",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "make a picture of an underwater kingdom",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "I want to see what the surface of Mars looks like",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "can you visualize a steampunk robot",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "create an artwork of a peaceful Japanese garden",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "draw a cyberpunk street scene at night with neon lights",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "generate a photo of a vintage car on a desert road",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "I'd like to see a painting of a stormy ocean",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "show me a fantasy castle on a cliff",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "make me a picture of an astronaut floating in space",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "sketch out a cozy cabin in the woods during winter",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "what does a photon torpedo explosion look like",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "paint a portrait of a samurai warrior",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "create an image of a bioluminescent forest at night",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "draw a pirate ship sailing through a thunderstorm",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "generate a picture of a robot and a human shaking hands",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "take a photo of the northern lights over a frozen lake",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "show me a visualization of a black hole",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "create concept art of a post-apocalyptic city",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "draw me a retro 80s arcade interior",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "generate an image of a phoenix rising from ashes",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "generate_image"}}]
+    }
+  },
+  {
+    "input": "what do people on reddit think about The Dark Knight",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "find me reddit discussions about Interstellar",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "what does reddit say about the new Dune movie",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "any reddit threads about why people love The Shawshank Redemption",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "show me community opinions on Marvel vs DC",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "what are people saying on reddit aboutOppenheimer",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "find reddit posts about underrated movies",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "what's the general consensus on Barbie the movie according to reddit",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "are there any good reddit discussions about horror movie recommendations",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "what does the reddit community think about Avatar 2",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "find me a reddit thread debating whether the book was better than the movie",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "show me what people on reddit said about Everything Everywhere All at Once",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "any reddit opinions on whether Tenet was confusing",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "what's the hottest debate on r/movies right now",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "find reddit reactions to the latest Oscar nominations",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "what do movie fans on reddit think about sequels vs originals",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "show me reddit comments about the best movie endings of all time",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "are people on reddit excited about the new Star Wars project",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "what does reddit think about streaming services killing cinema",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "find me the most upvoted movie review on reddit this month",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "reddit"}}]
+    }
+  },
+  {
+    "input": "tell me a movie fact",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "give me a trivia question about movies",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "test my movie knowledge",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "I want to learn some movie facts",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "quiz me on movies",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "give me some film trivia",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "I want to test my cinema knowledge",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "did you know any interesting movie trivia",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "hit me with a movie fact",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "I'm bored, give me a fun movie fact",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "challenge me with a film question",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "share a piece of movie trivia with me",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "can you quiz me on film knowledge",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "I want to see if I know my movies",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "give me a random fact about cinema",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "test me on movie trivia",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "I want to play a movie trivia game",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "ask me a question about movies",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "give me a challenge about film facts",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  },
+  {
+    "input": "I want to learn something new about movies",
+    "expected": {
+      "role": "assistant",
+      "tool_calls": [{"type": "function", "function": {"name": "factz"}}]
+    }
+  }
+]
